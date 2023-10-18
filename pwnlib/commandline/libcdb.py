@@ -212,7 +212,7 @@ def main(args):
         from hashlib import md5, sha1, sha256
         for file in args.files:
             if not os.path.exists(file) or not os.path.isfile(file):
-                log.failure('File does not exist %s', args.file)
+                log.failure('File does not exist %s', file)
                 continue
             
             if args.unstrip:
